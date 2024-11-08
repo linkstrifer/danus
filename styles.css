@@ -1,0 +1,374 @@
+:root {
+  --color-primary: #fd9423;
+  --color-secondary: #1a6da5;
+  --color-tertiary: #f5f5e0;
+  --radius: 3rem;
+  --padding: 0px;
+}
+
+@keyframes heroLeft {
+  from {
+    transform: translateX(-50vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroRight {
+  from {
+    transform: translateX(50vw);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes heroBottom {
+  from {
+    transform: translateY(50vh);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: 'stolzl', sans-serif;
+  font-style: normal;
+  gap: 8rem;
+  margin: 0;
+}
+
+input {
+  font-family: 'stolzl', sans-serif;
+}
+
+section {
+  align-items: center;
+  display: grid;
+  gap: 0.25rem;
+  grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+  margin: auto;
+  max-width: 1280px;
+  width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  grid-template-rows: 1fr auto;
+  min-height: max(100vh, 768px);
+  overflow: hidden;
+}
+
+.hero > * {
+  grid-row: 1;
+}
+
+.hero-video {
+  aspect-ratio: 1 / 1;
+  grid-column: 4 / span 6;
+  width: 100%;
+}
+
+.hero-title {
+  animation: heroLeft 1s ease-in-out backwards 1;
+  animation-delay: 1s;
+  grid-column: 1 / span 5;
+  text-align: right;
+}
+
+.hero-subtitle {
+  animation: heroRight 1s ease-in-out backwards 1;
+  animation-delay: 1s;
+  color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 500;
+  grid-column: 8 / span 5;
+  line-height: 1;
+}
+
+.hero-cta {
+  animation: heroBottom 1s ease-in-out backwards 1;
+  animation-delay: 1.5s;
+  align-self: self-end;
+  display: flex;
+  grid-column: 2 / span 10;
+  grid-row: 1;
+  justify-content: center;
+  padding-bottom: 2rem;
+}
+
+.button {
+  background-color: var(--color-secondary);
+  border-radius: 0 calc(var(--radius) - var(--padding)) 0
+    calc(var(--radius) - var(--padding));
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: 'stolzl', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding: 1.5rem 3rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  opacity: 0.9;
+}
+
+.section-title {
+  background-color: var(--color-primary);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  color: white;
+  font-size: 3rem;
+  grid-column: 3 / span 8;
+  padding: 2rem;
+  text-align: center;
+}
+
+.benefits,
+.products,
+.about-us,
+.testimonies,
+.jobs,
+.footer-wrapper {
+  grid-template-rows: repeat(2, min-content);
+}
+
+.benefits-list {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  grid-column: 2 / span 10;
+}
+
+.benefit {
+  align-items: center;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.benefit:nth-child(even) .benefit-image {
+  order: 2;
+}
+
+.benefit-image {
+  aspect-ratio: 1 / 1;
+  grid-column-end: span 6;
+  position: relative;
+}
+
+.benefit-image::before {
+  background-color: var(--color-tertiary);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  content: '';
+  display: block;
+  inset: 10% 20%;
+  position: absolute;
+  z-index: -1;
+}
+
+.benefit-info {
+  display: subgrid;
+  flex-direction: column;
+  grid-column-end: span 6;
+  text-align: center;
+  padding: 0 3rem;
+}
+
+.benefit-title {
+  color: var(--color-primary);
+  font-size: 4rem;
+  line-height: 1;
+  font-weight: 500;
+}
+
+.products-list {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column: 1 / span 12;
+}
+
+.product {
+  --padding: 2rem;
+
+  background-color: var(--color-tertiary);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  grid-column-end: span 4;
+  padding: var(--padding);
+}
+
+.product-picture {
+  display: flex;
+  gap: 0.5rem;
+  height: 400px;
+  width: 100%;
+  position: relative;
+}
+
+.product-picture img {
+  object-fit: contain;
+}
+
+.product-caption {
+  bottom: 0;
+  color: var(--color-primary);
+  left: 0;
+  position: absolute;
+}
+
+.about-us {
+  background-color: var(--color-tertiary);
+  color: var(--color-primary);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  justify-content: center;
+  align-items: center;
+  grid-template-rows: 1fr;
+  padding: 2rem;
+  max-width: 1280px;
+}
+
+.about-us-title {
+  font-size: 4rem;
+  grid-column: 2 / span 5;
+  text-align: center;
+}
+
+.about-us-description {
+  grid-column: 8 / span 4;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.testimonies-list {
+  display: grid;
+  gap: 4rem;
+  grid-column: 1 / span 12;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+.testimony {
+  --padding: 2rem;
+
+  background-color: var(--color-tertiary);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  color: var(--color-primary);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-column-end: span 4;
+  padding: var(--padding);
+  text-align: center;
+}
+
+.testimony-image {
+  aspect-ratio: 1 / 1;
+  background-color: #ff000033;
+  border-radius: 0 calc(var(--radius) - var(--padding)) 0
+    calc(var(--radius) - var(--padding));
+  object-fit: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.jobs {
+  gap: 4rem;
+}
+
+.jobs-title {
+  color: var(--color-primary);
+  font-size: 3rem;
+  grid-column: 1 / span 6;
+  line-height: 1;
+  text-align: center;
+}
+
+.jobs-form {
+  --padding: 2rem;
+
+  background-color: var(--color-tertiary);
+  border-radius: 0 var(--radius) 0 var(--radius);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  grid-column: 7 / span 5;
+  padding: var(--padding);
+}
+
+.jobs-form input:first-child {
+  border-radius: 0 calc(var(--radius) - var(--padding)) 0 0;
+}
+
+.jobs-form input {
+  border: none;
+  padding: 1rem;
+}
+
+.jobs-submit {
+  border-top-right-radius: 0;
+}
+
+.footer {
+  background-color: var(--color-primary);
+}
+
+.footer-wrapper {
+  align-items: start;
+  color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin: auto;
+  max-width: 1280px;
+  padding: 2rem;
+}
+
+.footer-title {
+  grid-row: 1;
+  grid-column: 1 / span 6;
+}
+
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  grid-column: 1 / span 6;
+  grid-row: 2;
+}
+
+.footer-contact li {
+  display: block;
+}
+
+.footer-socials {
+  align-items: center;
+  display: flex;
+  gap: 0.5rem;
+  grid-column: 7 / span 6;
+  grid-row: 1;
+  justify-content: flex-end;
+}
+
+.footer-social {
+  align-items: center;
+  display: flex;
+  fill: white;
+}
