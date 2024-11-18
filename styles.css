@@ -218,6 +218,7 @@ img {
   gap: 24px;
   width: 100%;
   max-width: 1400px;
+  padding-top: 4rem;
 }
 
 .benefits-title {
