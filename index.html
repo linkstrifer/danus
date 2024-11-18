@@ -9,103 +9,121 @@
   </head>
 
   <body>
+    <header class="header">
+      <div class="wrapper header-wrapper">
+        <img
+          src="assets/images/logo.png"
+          alt="danus Sunscreen"
+          class="header-logo"
+        />
+
+        <a class="button" href="#comprar">Comprar ahora</a>
+      </div>
+    </header>
+
     <section class="hero" id="hero">
       <video
         class="hero-video"
-        src="assets/videos/hero-6.webm"
+        src="assets/videos/hero.mp4"
         autoplay
         muted
       ></video>
 
       <h1 class="hero-title">
         <img alt="Danus Sunscreen logo" src="assets/images/logo.png" />
+
+        <a href="#comprar" class="button">Comprar ahora</a>
       </h1>
 
-      <h2 class="hero-subtitle">BLOQUEADOR SOLAR CON REPELENTE</h2>
+      <div class="hero-subtitle">
+        <h2>EL ÚNICO BLOQUEADOR SOLAR CON REPELENTE DEL&nbsp;MERCADO</h2>
 
-      <div class="hero-cta">
-        <a class="button" href="#">Comprar ahora</a>
+        <p>
+          Apto para toda la familia con valores adicionales que cuidarán tu piel
+        </p>
       </div>
     </section>
 
-    <section class="benefits" id="benefits">
-      <h1 class="section-title">Beneficios</h1>
+    <section class="benefits bg-tertiary" id="benefits">
+      <div class="wrapper">
+        <h1 class="benefits-title">Beneficios</h1>
 
-      <ul class="benefits-list">
-        <li class="benefit">
-          <picture class="benefit-image">
-            <img src="assets/images/10.png" />
-          </picture>
+        <img class="benefits-image" src="assets/images/benefits.png" alt="" />
 
-          <div class="benefit-info">
-            <h2 class="benefit-title">TEXTURA LIGERA</h2>
+        <ul class="benefits-list">
+          <li class="benefit">
+            <img class="benefit-image" src="assets/images/benefit1.png" />
 
-            <p class="benefit-description">
-              lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore
-            </p>
-          </div>
-        </li>
+            <div class="benefit-info">
+              <h2 class="benefit-title">RESISTENTE AL AGUA</h2>
 
-        <li class="benefit">
-          <picture class="benefit-image">
-            <img src="assets/images/15.png" />
-          </picture>
+              <p class="benefit-description">
+                Protección duradera incluso en actividades acuáticas. Danus
+                permanece contigo bajo el sol y el agua.
+              </p>
+            </div>
+          </li>
 
-          <div class="benefit-info">
-            <h2 class="benefit-title">RESISTENTE AL AGUA</h2>
+          <li class="benefit">
+            <img class="benefit-image" src="assets/images/benefit2.png" />
 
-            <p class="benefit-description">
-              lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore
-            </p>
-          </div>
-        </li>
+            <div class="benefit-info">
+              <h2 class="benefit-title">TEXTURA LIGERA</h2>
 
-        <li class="benefit">
-          <picture class="benefit-image">
-            <img src="assets/images/04.png" />
-          </picture>
+              <p class="benefit-description">
+                Disfruta de una aplicación suave y sin sensación grasosa. Danus
+                se absorbe rápidamente para una protección cómoda todo el día.
+              </p>
+            </div>
+          </li>
 
-          <div class="benefit-info">
-            <h2 class="benefit-title">PARA TODO TIPO DE PIEL</h2>
+          <li class="benefit">
+            <img class="benefit-image" src="assets/images/benefit3.png" />
 
-            <p class="benefit-description">
-              lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore
-            </p>
-          </div>
-        </li>
+            <div class="benefit-info">
+              <h2 class="benefit-title">PARA TODO TIPO DE PIEL</h2>
 
-        <li class="benefit">
-          <picture class="benefit-image">
-            <img src="assets/images/12.png" />
-          </picture>
-
-          <div class="benefit-info">
-            <h2 class="benefit-title">PARA TODA LA FAMILIA</h2>
-
-            <p class="benefit-description">
-              lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet dolore
-            </p>
-          </div>
-        </li>
-      </ul>
+              <p class="benefit-description">
+                Fórmula hipoalergénica y suave, ideal para pieles sensibles.
+                Danus cuida cada tipo de piel sin irritaciones.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="products" id="products">
-      <h1 class="section-title">PRESENTACIONES</h1>
+    <section class="family">
+      <div class="wrapper">
+        <div class="family-info">
+          <h1>PARA TODA LA&nbsp;FAMILIA</h1>
 
+          <p>
+            Desde los más pequeños hasta los adultos, Danus ofrece protección
+            completa para toda la familia en cualquier aventura al aire libre.
+          </p>
+
+          <a href="#comprar" class="button">Protegelos aqui</a>
+        </div>
+
+        <img
+          src="assets/images/family.png"
+          alt="Familia"
+          class="family-image"
+        />
+      </div>
+    </section>
+
+    <section class="products" id="comprar">
       <ul class="products-list">
         <li class="product">
           <picture class="product-picture">
             <img src="assets/images/1L.png" />
 
-            <figcaption class="product-caption">1L</figcaption>
+            <figcaption class="product-caption">1 Litro</figcaption>
           </picture>
 
-          <a class="button" href="#">Comprar</a>
+          <a class="button" href="#">Pruébala</a>
         </li>
 
         <li class="product">
@@ -115,7 +133,7 @@
             <figcaption class="product-caption">100ml</figcaption>
           </picture>
 
-          <a class="button" href="#">Comprar</a>
+          <a class="button" href="#">Pruébala</a>
         </li>
 
         <li class="product">
@@ -125,30 +143,59 @@
             <figcaption class="product-caption">10ml</figcaption>
           </picture>
 
-          <a class="button" href="#">Comprar</a>
+          <a class="button" href="#">Pruébala</a>
         </li>
       </ul>
     </section>
 
     <section class="about-us">
-      <h1 class="about-us-title">NOSOTROS</h1>
+      <div class="wrapper">
+        <div class="about-us-info">
+          <h1 class="about-us-title">NOSOTROS</h1>
 
-      <p class="about-us-description">
-        lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-        nonummy nibh euismod tincidunt ut laoreet dolore
-      </p>
+          <p class="about-us-description">
+            En Danus, parte de la familia Sirona, creemos en una protección
+            solar completa y confiable. Nuestra fórmula avanzada con SPF 50+,
+            resistencia al agua y propiedades repelentes está diseñada para
+            brindar seguridad y tranquilidad a toda la familia en cada
+            aplicación. Danus es el aliado perfecto para disfrutar del aire
+            libre con confianza, sin importar el entorno.
+          </p>
+        </div>
+
+        <img
+          src="assets/images/about-us.png"
+          alt="Nosotros"
+          class="about-us-image"
+        />
+      </div>
     </section>
 
-    <section class="testomonies">
-      <h1 class="section-title">TESTIMONIOS</h1>
+    <section class="testimonies">
+      <img
+        src="assets/images/testimonies1.png"
+        alt=""
+        class="testimonies-bkg-1"
+      />
+      <img
+        src="assets/images/testimonies2.png"
+        alt=""
+        class="testimonies-bkg-2"
+      />
+
+      <h1 class="testimonies-title">¡Nuestros Clientes!</h1>
 
       <ul class="testimonies-list">
         <li class="testimony">
           <img class="testimony-image" src="assets/images/testimony-01.png" />
 
           <p class="testimony-description">
-            lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore
+            &bigstar;&bigstar;&bigstar;&bigstar;&bigstar;
+          </p>
+
+          <p class="testimony-description">
+            Danus me ha dado la tranquilidad que buscaba. Es ligero, efectivo y
+            perfecto para toda la familia. ¡Lo usamos en cada salida al parque!
           </p>
         </li>
 
@@ -156,8 +203,13 @@
           <img class="testimony-image" src="assets/images/testimony-02.png" />
 
           <p class="testimony-description">
-            lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore
+            &bigstar;&bigstar;&bigstar;&bigstar;&bigstar;
+          </p>
+
+          <p class="testimony-description">
+            Me encanta que no solo protege del sol, sino que también es
+            repelente. Ideal para las aventuras al aire libre. ¡Sin duda, mi
+            bloqueador favorito!
           </p>
         </li>
 
@@ -165,27 +217,45 @@
           <img class="testimony-image" src="assets/images/testimony-03.png" />
 
           <p class="testimony-description">
-            lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-            nonummy nibh euismod tincidunt ut laoreet dolore
+            &bigstar;&bigstar;&bigstar;&bigstar;&bigstar;
+          </p>
+
+          <p class="testimony-description">
+            Finalmente encontré un producto que combina protección solar con
+            repelente. Danus es perfecto para las zonas tropicales y no irrita
+            la piel.
           </p>
         </li>
       </ul>
     </section>
 
     <section class="jobs">
-      <h1 class="jobs-title">TRABAJA CON NOSOTROS</h1>
+      <div class="wrapper">
+        <div class="jobs-info">
+          <h1 class="jobs-title">TRABAJA CON NOSOTROS</h1>
 
-      <form class="jobs-form">
-        <input type="text" placeholder="Nombre completo" />
+          <p>
+            Únete al equipo Danus y ayuda a proteger la piel de las personas
+            cada día.
+          </p>
 
-        <input type="text" placeholder="Número de teléfono" />
+          <img src="assets/images/jobs.gif" alt="Trabaja con nosotros" />
+        </div>
 
-        <input type="text" placeholder="Correo electrónico" />
+        <form class="jobs-form">
+          <input type="text" placeholder="Nombre completo" />
 
-        <input type="text" placeholder="Ciudad" />
+          <input type="text" placeholder="Número de teléfono" />
 
-        <button type="submit" class="button jobs-submit">Enviar</button>
-      </form>
+          <input type="text" placeholder="Correo electrónico" />
+
+          <input type="text" placeholder="Ciudad" />
+
+          <textarea placeholder="Mensaje"></textarea>
+
+          <button type="submit" class="button jobs-submit">Enviar</button>
+        </form>
+      </div>
     </section>
 
     <footer class="footer">
@@ -202,39 +272,18 @@
             <strong>Correo electrónico</strong>
             <span>danus@gmail.com</span>
           </li>
-        </ul>
 
-        <ul class="footer-socials">
-          <li class="footer-social">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="36"
-              height="36"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M 8 3 C 5.243 3 3 5.243 3 8 L 3 16 C 3 18.757 5.243 21 8 21 L 16 21 C 18.757 21 21 18.757 21 16 L 21 8 C 21 5.243 18.757 3 16 3 L 8 3 z M 8 5 L 16 5 C 17.654 5 19 6.346 19 8 L 19 16 C 19 17.654 17.654 19 16 19 L 8 19 C 6.346 19 5 17.654 5 16 L 5 8 C 5 6.346 6.346 5 8 5 z M 17 6 A 1 1 0 0 0 16 7 A 1 1 0 0 0 17 8 A 1 1 0 0 0 18 7 A 1 1 0 0 0 17 6 z M 12 7 C 9.243 7 7 9.243 7 12 C 7 14.757 9.243 17 12 17 C 14.757 17 17 14.757 17 12 C 17 9.243 14.757 7 12 7 z M 12 9 C 13.654 9 15 10.346 15 12 C 15 13.654 13.654 15 12 15 C 10.346 15 9 13.654 9 12 C 9 10.346 10.346 9 12 9 z"
-              ></path>
-            </svg>
-          </li>
-
-          <li class="footer-social">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              x="0px"
-              y="0px"
-              width="36"
-              height="36"
-              viewBox="0 0 50 50"
-            >
-              <path
-                d="M25,3C12.85,3,3,12.85,3,25c0,11.03,8.125,20.137,18.712,21.728V30.831h-5.443v-5.783h5.443v-3.848 c0-6.371,3.104-9.168,8.399-9.168c2.536,0,3.877,0.188,4.512,0.274v5.048h-3.612c-2.248,0-3.033,2.131-3.033,4.533v3.161h6.588 l-0.894,5.783h-5.694v15.944C38.716,45.318,47,36.137,47,25C47,12.85,37.15,3,25,3z"
-              ></path>
-            </svg>
+          <li>
+            <strong>Redes</strong>
+            <span>@danus_sunscreen</span>
           </li>
         </ul>
+
+        <img
+          src="assets/images/logo-white.png"
+          alt="Danus Sunscreen"
+          class="footer-logo"
+        />
       </div>
     </footer>
   </body>
