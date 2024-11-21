@@ -18,6 +18,8 @@ p {
 
 video {
   pointer-events: none;
+  position: relative;
+  z-index: -1;
 }
 
 @keyframes heroLeft {
@@ -52,8 +54,8 @@ body {
   flex-direction: column;
   font-family: 'stolzl', sans-serif;
   font-style: normal;
-  gap: 8rem;
   margin: 0;
+  gap: 2rem;
 }
 
 input {
@@ -195,16 +197,6 @@ img {
   opacity: 0.9;
 }
 
-.section-title {
-  background-color: var(--color-primary);
-  border-radius: 0 var(--radius) 0 var(--radius);
-  color: white;
-  font-size: 3rem;
-  grid-column: 3 / span 8;
-  padding: 2rem;
-  text-align: center;
-}
-
 .benefits .wrapper {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -217,8 +209,8 @@ img {
   margin: auto;
   gap: 24px;
   width: 100%;
-  max-width: 1400px;
-  padding-top: 4rem;
+  max-width: 1100px;
+  padding: 4rem 0 0;
 }
 
 .benefits-title {
@@ -233,12 +225,12 @@ img {
 .benefits-image {
   align-self: flex-end;
   grid-area: image;
+  max-width: 300px;
 }
 
 .benefits-list {
   display: contents;
   margin: 0;
-  padding: 0;
 }
 
 .benefit {
@@ -263,11 +255,12 @@ img {
   flex-direction: row-reverse;
   grid-area: benefit3;
   text-align: right;
+  padding-bottom: 3rem;
 }
 
 .benefit-image {
   aspect-ratio: 1 / 1;
-  width: 100px;
+  width: 60px;
 }
 
 .benefit-info {
@@ -375,7 +368,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin: 2rem;
+  margin: 8rem 2rem;
   padding: 3rem 2rem 5rem;
   position: relative;
 }
@@ -435,6 +428,7 @@ img {
   display: flex;
   gap: 40px;
   margin: auto;
+  max-width: 1000px;
 }
 
 .jobs-info {
